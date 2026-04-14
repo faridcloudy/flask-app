@@ -37,3 +37,7 @@ def index():
     comments = Comment.query.all()
 
     return render_template("main_page.html", comments=comments)
+
+@app.route("/login/")
+def login():
+    return render_template("login_page.html")
